@@ -1,86 +1,80 @@
+/* Estilos base */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  background-color: #ffffff;
-  min-height: 100vh;
-  font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
 }
 
 #root {
-  height: 100%;
+    height: 100%;
 }
 
-.root-container {
-  height: 100%;
-  position: relative;
+/* Estrutura original mantida */
+.main-container {
+    height: 100%;
+    position: relative;
 }
 
-.main-layout {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-.main-content {
-  flex: 1 1 auto;
-  position: relative;
+.page-section {
+    flex: 1 1 auto;
+    position: relative;
 }
 
-.section-wrapper {
-  height: 100%;
-  position: relative;
-  width: 100%;
+.hero-container {
+    height: 100%;
+    position: relative;
+    width: 100%;
 }
 
-.section-inner {
-  height: 100%;
-  position: relative;
-  width: 100%;
+.responsive-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    max-width: 1200px;
+    padding: 2rem;
 }
 
-.section-white {
-  height: 100%;
-  position: relative;
-  width: 100%;
-  background-color: #ffffff;
+/* Novos estilos adaptados */
+.dynamic-content {
+    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
 }
 
-.center-content {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  position: relative;
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
 }
 
-.card-wrapper {
-  position: relative;
+.feature-card {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: 2rem;
+    transition: transform 0.3s ease;
+    border: 2px solid #e62429; /* Vermelho Marvel */
 }
 
-.card {
-  position: relative;
-  background-color: #ffffff;
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(230, 36, 41, 0.2);
 }
 
-.card-overlay {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-.card-content {
-  position: relative;
-}
-
-.full-height-width {
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+.feature-card h2 {
+    color: #e62429; /* Vermelho Marvel */
+    margin-bottom: 1rem;
 }
